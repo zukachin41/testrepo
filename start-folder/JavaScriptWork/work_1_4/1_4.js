@@ -14,5 +14,5 @@ while (i < stockApple){
 }
 
 for (let j = 1; j <= stockApple; j++){
-    console.log('リンゴを買うのは${j}回目の処理です');
+    console.log(`リンゴを買うのは${j}回目の処理です`);
 }
