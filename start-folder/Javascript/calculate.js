@@ -6,7 +6,7 @@ const resultArea = document.getElementById("result");
 
 val1Input.addEventListener("input", calculate);
 val2Input.addEventListener("input", calculate);
-operatorSelect.addEventListener("choice",calculate);
+operatorSelect.addEventListener("change",calculate);
 
 function calculate(){
     const val1 = parseFloat(val1Input.value);
@@ -33,17 +33,17 @@ function calculate(){
         symbol = "×";
     }else if (operator === "division"){
         if (val2 === 0){
-            formlaArea.textContent = "計算式:";
+            formulaArea.textContent = "計算式:";
             resultArea.textContent = "0で割ることはできません。";
             return
         }
         result = val1/ val2;
         symbol = "÷";
     }else {
-        formlaArea.textcontent = "計算式:";
+        formulaArea.textContent = "計算式:";
         resultArea.textContent = "演算子が正しくありません。";
         return;
     }
-    formlaArea.textcontent = "計算式: ${val1} ${symbol} ${val2}";
-    resultArea.textContent = "計算結果: ${result}";
+    formulaArea.textContent = `計算式: ${val1} ${symbol} ${val2}`;
+    resultArea.textContent = `計算結果: ${result}`;
 }
