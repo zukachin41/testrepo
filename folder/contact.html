@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>問い合わせ</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="profile.html">ホーム</a></li>
+                <li><a href="contaact.html">お問い合わせ</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>お問い合わせフォーム</h2>
+            <form action="#" method="POST">
+                <lavel for="name">名前</lavel>
+                <input type="text" id="name" name="name" required><br>
+
+                <lavel for="email">メールアドレス</lavel>
+                <input type="email" id="email" name="email" required><br>
+                
+                <lavel for="purpose">目的：</lavel>
+                <select name="choice" id="choice">
+                    <option value="not_choice">未選択</option>
+                    <option value="recruitment">リクルート</option>
+                    <option value="question">質問</option>
+                    <option value="job_requeest">仕事依頼</option>
+                </select><br><br>
+
+                <lavel for="message">メッセージ</lavel>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025私のポートフォリオ</p>
+    </footer>
+</body>
+</html>
