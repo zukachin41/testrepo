@@ -1,7 +1,7 @@
 const val1Input = document.getElementById("value1");
 const val2Input = document.getElementById("value2");
 const operatorSelect = document.getElementById("choice");
-const formlaArea = document.getElementById("formula");
+const formulaArea = document.getElementById("formula");
 const resultArea = document.getElementById("result");
 
 val1Input.addEventListener("input", calculate);
