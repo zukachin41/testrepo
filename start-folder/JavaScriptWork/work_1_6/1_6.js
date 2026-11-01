@@ -1,4 +1,4 @@
- fanction makeCoffee() {
+ function makeCoffee() {
 
     console.log("☕ スタッフ：先にコーヒーを準備します...");
     
