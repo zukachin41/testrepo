@@ -1,20 +1,20 @@
- function makeCoffee() {
+function makeCoffee() {
 
     console.log("☕ スタッフ：先にコーヒーを準備します...");
-    
-    return new Promise((resolve)=>{
-        
-        setTimeout(()=>{
-            
-            console.log("✅ コーヒーができました！");
-           
-            resolve("コーヒー");
-        
-        }, 2000); // 2秒
-    
+
+    return new Promise((resolve) => {
+
+      setTimeout(() => {
+
+        console.log("✅ コーヒーができました！");
+
+        resolve("コーヒー");
+
+      }, 2000); // 2秒
+
     });
 
-}
+  }
 
  function makeSandwich() {
 
